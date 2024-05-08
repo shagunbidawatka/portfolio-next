@@ -19,18 +19,25 @@ module.exports = {
       md: "768px",
       lg: "960px",
       xl: "1200px",
+      xs: "450px",
     },
     extend: {
       colors: {
-        primary: "#131424",
-        secondary: "#393A47",
+        primary: "#120f1c",
+        secondary: "#aaa6c3",
         accent: "#F13024",
+        tertiary: "#151030",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
+        heroBg: 'url("/bgherocheck.png")',
+        bgimg2: 'url("/bgimg2.png")',
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",
