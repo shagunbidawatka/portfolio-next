@@ -7,10 +7,12 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Blogs from "@/components/Blogs";
+import PortfolioSEO from "@/components/PortfolioSEO";
 
 export default function Home() {
   return (
     <div className="relative z-0 bg-primary">
+      <PortfolioSEO />
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <HomePage />
       </div>
