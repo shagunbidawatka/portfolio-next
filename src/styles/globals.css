@@ -489,7 +489,7 @@ h1 {
 
 .tri {
   aspect-ratio: 1/1;
-  height: 50vh;
+  height: 40vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -498,6 +498,7 @@ h1 {
   background-size: cover;
   transform-origin: 53% 55%;
   background-position: 50%;
+  margin: auto;
 }
 .first:after {
   background-image: url("/blog1.avif");

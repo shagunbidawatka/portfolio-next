@@ -59,9 +59,18 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => nav.id !== "resume" && setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a
+                href={
+                  nav.id === "resume"
+                    ? `https://drive.google.com/file/d/16lmQRVMxfCQA89ndQZUP8xyTxIWtMU74/view?usp=sharing`
+                    : `#${nav.id}`
+                }
+                target={nav.id === "resume" ? "_blank" : "_self"}
+              >
+                {nav.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -88,10 +97,19 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    nav.id !== "resume" && setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a
+                    href={
+                      nav.id === "resume"
+                        ? `https://drive.google.com/file/d/16lmQRVMxfCQA89ndQZUP8xyTxIWtMU74/view?usp=sharing`
+                        : `#${nav.id}`
+                    }
+                    target={nav.id === "resume" ? "_blank" : "_self"}
+                  >
+                    {nav.title}
+                  </a>
                 </li>
               ))}
             </ul>

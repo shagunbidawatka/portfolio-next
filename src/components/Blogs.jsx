@@ -31,7 +31,7 @@ const Blogs = () => {
                 }}
               >
                 {" "}
-                <div class={`tri ${item?.class}`}>
+                <div class={`tri ${item?.class} md:h-[50vh]`}>
                   <i></i>
                 </div>
               </Tilt>

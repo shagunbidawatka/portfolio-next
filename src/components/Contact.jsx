@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`md:mt-20 flex xl:flex-row flex-col gap-10 overflow-hidden items-center md:w-full w-fit`}
+      className={`md:mt-20 flex xl:flex-row flex-col gap-10 overflow-hidden items-center md:w-full w-fit m-auto`}
     >
       <motion.div
         className="animate-cursor"
@@ -61,10 +61,10 @@ const Contact = () => {
       />
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-1"
+        className="flex-1 "
       >
         <h2
-          className="h2 hover-this"
+          className="h2 hover-this text-white font-black"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
@@ -77,20 +77,20 @@ const Contact = () => {
           <div className="flex md:gap-10 align-middle items-center gap-4">
             {" "}
             <IoMail color="#fff" size={24} />
-            <h1 className="font-bold md:text-2xl text-l">
+            <h1 className="font-bold md:text-2xl text-l text-white font-black">
               shagunbidawatka665@gmail.com
             </h1>
           </div>
           <div className="flex md:gap-10 gap-4 align-middle items-center	mt-12">
             {" "}
             <ImPacman color="#fff" size={24} />
-            <h1 className="font-bold md:text-2xl text-xl">
+            <h1 className="font-bold md:text-2xl text-xl text-white ">
               <a href="https://topmate.io/shagun" target="_blank">
                 topmate.io/shagun
               </a>
             </h1>
           </div>
-          <div className="flex md:gap-10 gap-4 align-middle items-center	mt-12">
+          <div className="flex md:gap-10 gap-4 align-middle items-center	mt-12 text-white font-black">
             {" "}
             <FaLocationDot color="#fff" size={24} />
             <h1 className="font-bold md:text-2xl text-xl">

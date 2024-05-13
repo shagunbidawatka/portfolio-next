@@ -18,7 +18,7 @@ const HomePage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 text-white font-black"
           >
             SHAGUN <br />
             BIDAWATKA
@@ -42,7 +42,7 @@ const HomePage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="pb-10 mb-10  h3 text-2xl block md:hidden"
+            className="pb-10 mb-10  h3 text-2xl block md:hidden text-white font-black"
           >
             I'm a{" "}
             <span className="text-accent font-bold ">Frontend developer</span>
