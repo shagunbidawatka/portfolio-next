@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`md:mt-20 flex xl:flex-row flex-col gap-10 overflow-hidden items-center md:w-full w-fit m-auto`}
+      className={`md:mt-20 flex xl:flex-row flex-col gap-10 overflow-hidden items-center md:w-full w-fit m-auto md:mb-0 mb-20`}
     >
       <motion.div
         className="animate-cursor"
@@ -122,7 +122,7 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-[0.85] md:h-[550px] h-[350px]"
+        className="xl:flex-[0.85] md:h-[550px] h-[350px] md:block hidden"
       >
         <EarthCanvas />
       </motion.div>
